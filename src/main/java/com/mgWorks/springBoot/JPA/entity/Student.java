@@ -27,14 +27,14 @@ public class Student {
 	private Gaurdian gaurdian;
 
 	@Id
-	@SequenceGenerator(name = "Student_sequence", sequenceName = "Student_sequence", initialValue = 10, allocationSize = 1)
+	@SequenceGenerator(name = "Student_sequence", sequenceName = "Student_sequence", initialValue = 9, allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Student_sequence")
 	private long studentId;
-	@Column(name = "firstName", nullable = false)
+	@Column(name = "firstName")
 	private String firstName;
 	@Column(nullable = false)
 	private String lastName;
-	@Column(name = "emailAddress", nullable = false)
+	@Column(name = "emailAddress")
 	private String emailId;
 
 }

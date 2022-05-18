@@ -15,17 +15,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@AttributeOverrides({ @AttributeOverride(
-								name = "name", 
-						column = @Column(name = "gaurdian_name")),
-						@AttributeOverride(
-								name = "mobile",
-						column = @Column(
-								name = "gaurdian_mobile")), 
-						@AttributeOverride(
-								name = "email",
-						column = @Column(name = "gaurdian_email"))
-})
+@AttributeOverrides({ @AttributeOverride(name = "name", column = @Column(name = "gaurdian_name")),
+					 @AttributeOverride(name = "mobile",column = @Column(name = "gaurdian_mobile")), 
+				   	@AttributeOverride(name = "email",column = @Column(name = "gaurdian_email")) })
 public class Gaurdian {
 	@Column(nullable = false)
 	private String name;

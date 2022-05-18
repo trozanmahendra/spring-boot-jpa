@@ -28,7 +28,7 @@ class StudentRepositoryTest {
 				.build();
 		studentRepository.save(student);
 		}
-//	@Test
+	@Test
 	public void saveStudentWithgaurdian() {
 		Gaurdian gaurdian = Gaurdian.builder()
 				.email("jaya@mail.com")
